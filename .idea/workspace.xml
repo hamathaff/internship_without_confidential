@@ -5,12 +5,61 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e10c878-0614-4bd8-ac7d-00decc6b819a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/TerrainJeu3D.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/ihm2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gauntlet2D/.idea/Gauntlet2D.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Gauntlet2D/Gauntlet2D/.idea/Gauntlet2D.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CustomSphere.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Images/copie.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Images/floor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MainApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/Cell.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/Dungeon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/Grid.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Map/Mybox.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Map_Editor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Map_Editor (2)/.idea/Map_Editor (2).iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet/Projet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet/Projet/.idea/Projet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet/Projet/out/production/Projet/.idea/Projet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet/out/production/Projet/.idea/Projet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Projet/out/production/Projet/out/production/Projet/.idea/Projet.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Stage/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../cm/cm.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp2/out/production/tp2/tp2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp2/tp2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/Exo_6/Exo_6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/Exo_6/out/production/Exo_6/Exo_6.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_3/exo_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_3/out/production/exo_3/exo_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_4/.idea/exo_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_4/out/production/exo_4/.idea/exo_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_5/.idea/exo_5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_5/out/production/exo_5/.idea/exo_5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_7/.idea/exo_7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_7/out/production/exo_7/.idea/exo_7.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_8/.idea/exo_8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/exo_8/out/production/exo_8/.idea/exo_8.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/out/production/tp3/tp3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp3/tp3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp_4/.idea/tp_4.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp_4/out/production/tp_4/.idea/tp_4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Chambre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Chambre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/My_Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/My_Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TerrainJeu3D.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,12 +70,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaFXApplication" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -52,15 +105,47 @@
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.29425287&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hamat\OneDrive\Bureau\S6\ihm2\Gauntlet3D\src\main\java\Images" />
+      <recent name="C:\Users\hamat\OneDrive\Bureau\S6\ihm2\Gauntlet3D\src\main\resources" />
+      <recent name="C:\Users\hamat\OneDrive\Bureau\S6\ihm2\Gauntlet3D\src\main\java" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Map.MainApp" />
+      <module name="Gauntlet3D" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Map.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainApp" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,6 +159,17 @@
       <workItem from="1714817739199" duration="7627000" />
       <workItem from="1714995701072" duration="2342000" />
       <workItem from="1715087626334" duration="1933000" />
+      <workItem from="1715253857437" duration="712000" />
+      <workItem from="1715255784664" duration="8104000" />
+      <workItem from="1715345452302" duration="2375000" />
+      <workItem from="1715349188926" duration="2061000" />
+      <workItem from="1715351461195" duration="304000" />
+      <workItem from="1715351798596" duration="3299000" />
+      <workItem from="1715364623511" duration="11649000" />
+      <workItem from="1715440511801" duration="1742000" />
+      <workItem from="1715513518463" duration="7370000" />
+      <workItem from="1715598710066" duration="13263000" />
+      <workItem from="1715626033908" duration="7293000" />
     </task>
     <servers />
   </component>
@@ -82,5 +178,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

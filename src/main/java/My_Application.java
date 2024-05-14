@@ -1,9 +1,15 @@
+import Map.Grid;
 import javafx.application.Application;
+import javafx.application.Platform;
 import javafx.scene.Camera;
 import javafx.scene.PerspectiveCamera;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
+import javafx.scene.transform.Transform;
 import javafx.stage.Stage;
+import javafx.beans.value.ChangeListener;
+import javafx.beans.value.ObservableValue;
+import javafx.scene.transform.Rotate;
 
 public class My_Application extends Application {
 
@@ -20,16 +26,21 @@ public class My_Application extends Application {
         Scene scene = new Scene(ch, WIDTH, HEIGHT);
         Camera camera = new PerspectiveCamera();
         scene.setCamera(camera);
-        ch.setTranslateX(WIDTH / 2);
-        ch.setTranslateY(HEIGHT);
+        ch.setTranslateX(WIDTH/2);
+        ch.setTranslateY(HEIGHT/2);
         primaryStage.setTitle("chambre");
         primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
             switch (event.getCode()) {
                 case UP:
-                    ch.rotateByX(-10);
+
+                    //ch.rotateByX(-10);
+                    //ch.moovbyym();
+                    camera.setTranslateY(camera.getTranslateY()-10);
                     break;
                 case DOWN:
-                    ch.rotateByX(10);
+                    //ch.rotateByX(10);
+                    //ch.moovbyy();
+                   camera.setTranslateY(camera.getTranslateY()+10);
                     break;
                 case LEFT:
                     ch.rotateByY(-10);
@@ -48,4 +59,6 @@ public class My_Application extends Application {
         primaryStage.setScene(scene);
         primaryStage.show();
     }
+
+
 }

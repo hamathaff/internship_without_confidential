@@ -1,65 +1,59 @@
+import Map.Mybox;
 import javafx.scene.Group;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.PhongMaterial;
-import javafx.scene.shape.Box;
 import javafx.scene.transform.Rotate;
 
 public class Chambre extends Group {
-    private Porte porte;
     private static final double LARGEUR_CHAMBRE = 400;
     private static final double HAUTEUR_CHAMBRE = 200;
     private static final double PROFONDEUR_CHAMBRE = 300;
-    private static final double EPAISSEUR_MUR = 10;
-    private static final double ANGLE_ROTATION = 20;
+    private static final double EPAISSEUR_MUR = 10;  // Définir l'épaisseur des murs ici
     private static final double LARGEUR_PORTE = 80;
     private static final double HAUTEUR_PORTE = 150;
 
-    private Box murGauche;
-    private Box murDroit;
-    private Box murAvant;
-    private Box murArriere;
-    private Box plafond;
-    private Box sol;
+    private Mybox murGauche;
+    private Mybox murDroit;
+    private Mybox murAvant;
+    private Mybox murArriere;
+    private Mybox plafond;
+    private Mybox mybox;
+    private Porte porte;
+    private Mybox murPetitGauche;
+    private Mybox murPetitDroit;
+    private Mybox murPorteToit;// Vous devez définir cette classe
 
     public Chambre() {
-        porte = new Porte();
-        porte.setTranslateY(-HAUTEUR_CHAMBRE / 2 + HAUTEUR_PORTE / 2);
+        murGauche = new Mybox(10, HAUTEUR_CHAMBRE, PROFONDEUR_CHAMBRE);
+        murDroit = new Mybox(10, HAUTEUR_CHAMBRE, PROFONDEUR_CHAMBRE);
+        murAvant = new Mybox(LARGEUR_CHAMBRE, HAUTEUR_CHAMBRE, 10);
+        murArriere = new Mybox(LARGEUR_CHAMBRE, HAUTEUR_CHAMBRE, 10);
+        double largeurPetitsMurs = 50;  // La largeur des petits murs de chaque côté de la porte
+        murPetitGauche = new Mybox(EPAISSEUR_MUR, HAUTEUR_CHAMBRE, largeurPetitsMurs);
+        murPetitDroit = new Mybox(EPAISSEUR_MUR, HAUTEUR_CHAMBRE, largeurPetitsMurs);
+        murPetitGauche.setTranslateZ(-PROFONDEUR_CHAMBRE / 2 + largeurPetitsMurs / 2);
+        murPetitDroit.setTranslateZ(PROFONDEUR_CHAMBRE / 2 - largeurPetitsMurs / 2);
 
-        murGauche = createWall(EPAISSEUR_MUR, HAUTEUR_CHAMBRE, PROFONDEUR_CHAMBRE, Color.GRAY);
-        murDroit = createWall(EPAISSEUR_MUR, HAUTEUR_CHAMBRE, PROFONDEUR_CHAMBRE, Color.GRAY);
-        murAvant = createWall(LARGEUR_CHAMBRE - 2 * EPAISSEUR_MUR, HAUTEUR_CHAMBRE, EPAISSEUR_MUR, Color.GRAY);
-        murArriere = createWall(LARGEUR_CHAMBRE - 2 * EPAISSEUR_MUR, HAUTEUR_CHAMBRE, EPAISSEUR_MUR, Color.GRAY);
+        plafond = new Mybox(LARGEUR_CHAMBRE, 10, PROFONDEUR_CHAMBRE);
+        mybox = new Mybox(LARGEUR_CHAMBRE, 10, PROFONDEUR_CHAMBRE);
 
-        plafond = new Box(LARGEUR_CHAMBRE, EPAISSEUR_MUR, PROFONDEUR_CHAMBRE);
-        plafond.setTranslateY(-HAUTEUR_CHAMBRE / 2 + EPAISSEUR_MUR / 2);
-        PhongMaterial plafondMaterial = new PhongMaterial(Color.GRAY);
-        plafondMaterial.setDiffuseColor(Color.GRAY);
-        plafondMaterial.setSpecularColor(Color.GRAY);
-        plafond.setMaterial(plafondMaterial);
+        // Positionnez les murs correctement
+        murGauche.setTranslateX(-LARGEUR_CHAMBRE / 2 + 5);
+        murDroit.setTranslateX(LARGEUR_CHAMBRE / 2 - 5);
+        murAvant.setTranslateZ(-PROFONDEUR_CHAMBRE / 2 + 5);
+        murArriere.setTranslateZ(PROFONDEUR_CHAMBRE / 2 - 5);
 
-        sol = createGround(LARGEUR_CHAMBRE, PROFONDEUR_CHAMBRE);
-        sol.setTranslateY(HAUTEUR_PORTE / 2);
+        plafond.setTranslateY(-HAUTEUR_CHAMBRE / 2 + 5);
+        mybox.setTranslateY(HAUTEUR_CHAMBRE / 2 - 5);
 
-        getChildren().addAll(murGauche, murDroit, murAvant, murArriere, plafond, sol, porte);
+        porte = new Porte();  // Assurez-vous que Porte est correctement définie
+        porte.setTranslateY(-HAUTEUR_CHAMBRE / 2 + 75);  // Hauteur de la porte
+        murPorteToit = new Mybox(LARGEUR_CHAMBRE, EPAISSEUR_MUR, PROFONDEUR_CHAMBRE - 2 * largeurPetitsMurs);
+        murPorteToit.setTranslateY(-HAUTEUR_CHAMBRE / 2 + EPAISSEUR_MUR / 2 + HAUTEUR_PORTE);
+
+
+
+        getChildren().addAll(murGauche, murDroit, murAvant, murArriere, plafond, mybox,porte);
     }
 
-    private Box createWall(double largeur, double hauteur, double profondeur, Color couleur) {
-        Box mur = new Box(largeur, hauteur, profondeur);
-        PhongMaterial material = new PhongMaterial(couleur);
-        material.setDiffuseColor(couleur);
-        material.setSpecularColor(Color.WHITE); // Ajustement de la couleur pour une réflexion réaliste
-        mur.setMaterial(material);
-        return mur;
-    }
-
-    private Box createGround(double largeur, double profondeur) {
-        Box sol = new Box(largeur, 0.1, profondeur);
-        PhongMaterial material = new PhongMaterial(Color.GREEN);
-        material.setDiffuseColor(Color.GREEN);
-        material.setSpecularColor(Color.WHITE); // Ajustement de la couleur pour une réflexion réaliste
-        sol.setMaterial(material);
-        return sol;
-    }
 
     public void rotateByX(double angle) {
         this.getTransforms().add(new Rotate(angle, Rotate.X_AXIS));
@@ -72,4 +66,19 @@ public class Chambre extends Group {
     public void rotateByZ(double angle) {
         this.getTransforms().add(new Rotate(angle, Rotate.Z_AXIS));
     }
+
+    public void moovbyx(){
+        this.setTranslateX(this.getTranslateX()+10);
+    }
+    public void moovbyy(){
+        this.setTranslateY(this.getTranslateY()+10);
+    }
+    public void moovbyxm(){
+        this.setTranslateX(this.getTranslateX()-10);
+    }
+
+    public void moovbyym(){
+        this.setTranslateY(this.getTranslateY()-10);
+    }
+
 }
