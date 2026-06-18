@@ -33,17 +33,15 @@ public class My_Application extends Application {
             switch (event.getCode()) {
                 case UP:
 
-                    //ch.rotateByX(-10);
-                    //ch.moovbyym();
+                    ch.rotateByX(-10);
                     camera.setTranslateY(camera.getTranslateY()-10);
                     break;
                 case DOWN:
-                    //ch.rotateByX(10);
-                    //ch.moovbyy();
+                    ch.rotateByX(10);
                    camera.setTranslateY(camera.getTranslateY()+10);
                     break;
                 case LEFT:
-                    ch.rotateByY(-10);
+                      ch.rotateByY(-10);
                     break;
                 case RIGHT:
                     ch.rotateByY(10);

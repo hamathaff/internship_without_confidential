@@ -1,3 +1,4 @@
+import Map.Grid;
 import Map.Mybox;
 import javafx.application.Application;
 import javafx.scene.Group;
@@ -64,6 +65,7 @@ public class MainApp extends Application{
         light.setTranslateZ(-300);
 
         Group root = new Group();
+        Grid grid = new Grid(5,5);
 
 
         mybox.setTranslateY(400);
@@ -109,10 +111,13 @@ public class MainApp extends Application{
         primaryStage.addEventHandler(KeyEvent.KEY_PRESSED, event -> {
             switch (event.getCode()) {
                 case UP:
-                   sphere.setTranslateZ(sphere.getTranslateZ()-10);
+                   sphere.setTranslateZ(sphere.getTranslateZ()+10);
+                    sphere.setTranslateY(sphere.getTranslateY()-10);
                     break;
                 case DOWN:
-                    sphere.setTranslateZ(sphere.getTranslateZ()+10);
+                    sphere.setTranslateZ(sphere.getTranslateZ()-10);
+                    sphere.setTranslateY(sphere.getTranslateY()+10);
+
                     break;
                 case LEFT:
                     sphere.setTranslateX(sphere.getTranslateX()-10);

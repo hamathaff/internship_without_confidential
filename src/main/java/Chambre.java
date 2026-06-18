@@ -19,8 +19,7 @@ public class Chambre extends Group {
     private Porte porte;
     private Mybox murPetitGauche;
     private Mybox murPetitDroit;
-    private Mybox murPorteToit;// Vous devez définir cette classe
-
+    private Mybox murPorteToit;
     public Chambre() {
         murGauche = new Mybox(10, HAUTEUR_CHAMBRE, PROFONDEUR_CHAMBRE);
         murDroit = new Mybox(10, HAUTEUR_CHAMBRE, PROFONDEUR_CHAMBRE);
@@ -44,7 +43,7 @@ public class Chambre extends Group {
         plafond.setTranslateY(-HAUTEUR_CHAMBRE / 2 + 5);
         mybox.setTranslateY(HAUTEUR_CHAMBRE / 2 - 5);
 
-        porte = new Porte();  // Assurez-vous que Porte est correctement définie
+        porte = new Porte();
         porte.setTranslateY(-HAUTEUR_CHAMBRE / 2 + 75);  // Hauteur de la porte
         murPorteToit = new Mybox(LARGEUR_CHAMBRE, EPAISSEUR_MUR, PROFONDEUR_CHAMBRE - 2 * largeurPetitsMurs);
         murPorteToit.setTranslateY(-HAUTEUR_CHAMBRE / 2 + EPAISSEUR_MUR / 2 + HAUTEUR_PORTE);
